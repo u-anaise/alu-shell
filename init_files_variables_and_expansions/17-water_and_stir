@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c "print(''.join('bestchol'[int(d)] for d in oct(int('$WATER'.translate(str.maketrans('water','01234')),5)+int('$STIR'.translate(str.maketrans('stir','0123')),4))[2:]))"
+printf '%o\n' $(($(echo $WATER | tr 'water' '01234') + $(echo $STIR | tr 'sir.' '0234' | tr 't' '1'))) | tr '01234567' 'bestchol'
