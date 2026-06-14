@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
-# This script displays PID and process name of processes containing bash
-pgrep -a bash
+#This script adds a sleep 2 in between each iteration of a loop
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
