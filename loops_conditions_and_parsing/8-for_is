@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script displays the content of the current directory in list format, after the first dash
+for item in *; do
+    echo "${item#*-}"
+done
